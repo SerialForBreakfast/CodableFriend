@@ -20,6 +20,5 @@ struct Friend: Codable {
     var registered: Date
     var tags: [String]
     var friends: [Connection]
-    
 }
 
