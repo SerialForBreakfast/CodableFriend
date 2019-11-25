@@ -50,7 +50,7 @@ class ViewController: UITableViewController, UISearchResultsUpdating {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let friend = filteredFriends[indexPath.row]
         cell.textLabel?.text = friend.name
-        cell.detailTextLabel?.text = friend.friends.map{$0.name }.joined(separator: ", ")
+        cell.detailTextLabel?.text = friend.friendList
         return cell
     }
     func updateSearchResults(for searchController: UISearchController) {
