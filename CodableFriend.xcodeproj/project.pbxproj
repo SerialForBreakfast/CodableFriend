@@ -24,6 +24,7 @@
 		44E4F554238C7AD800AB93AC /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823B238C40EA006D9AFC /* Friend.swift */; };
 		44E4F555238C7ADB00AB93AC /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823D238C42B6006D9AFC /* Connection.swift */; };
 		44E4F556238C7ADE00AB93AC /* JSONDecoder-remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823F238C5FA3006D9AFC /* JSONDecoder-remote.swift */; };
+		44E4F557238C889F00AB93AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A8226238C3EB2006D9AFC /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E4F557238C889F00AB93AC /* ViewController.swift in Sources */,
 				44E4F554238C7AD800AB93AC /* Friend.swift in Sources */,
 				44E4F553238C780700AB93AC /* FriendDataSource.swift in Sources */,
 				44E4F556238C7ADE00AB93AC /* JSONDecoder-remote.swift in Sources */,

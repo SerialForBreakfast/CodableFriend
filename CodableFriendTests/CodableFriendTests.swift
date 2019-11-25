@@ -18,13 +18,25 @@ class CodableFriendTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testExample() {
+    func test_fetchReturnsUnder10SecondsAndDecodesJSON() {
+        //But Who will test the testers?
+        XCTAssert(true)
         let decoder = JSONDecoder()
+        print("begin Async test")
+        let expectation = self.expectation(description: "Fetching")
+        var expectedFriends: [Friend]?
+        decoder.dateDecodingStrategy = .iso8601
         decoder.decode([Friend].self, fromURL: "https://www.hackingwithswift.com/samples/friendface.json") { friends in
-            let galeDyer = friends.matching("Gale Dyer")[0]
-            print(galeDyer)
-            XCTAssert(galeDyer.name == "Gale Dyer")
+//            print(friends)
+            expectedFriends = friends
+            print("Fulfill")
+            expectation.fulfill()
         }
+        waitForExpectations(timeout: 10, handler: nil)
+        var galeDyer = expectedFriends?.matching("Gale Dyer")[0].name ?? "Not Found"
+        print("Gale Dyer = " + galeDyer)
+        XCTAssert(galeDyer == "Gale Dyer")
+//        XCTAssert(galeDyer == "Not Found")
     }
     
     func testPerformanceExample() {
