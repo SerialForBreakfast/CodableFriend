@@ -18,6 +18,7 @@
 		446A823C238C40EA006D9AFC /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823B238C40EA006D9AFC /* Friend.swift */; };
 		446A823E238C42B6006D9AFC /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823D238C42B6006D9AFC /* Connection.swift */; };
 		446A8240238C5FA3006D9AFC /* JSONDecoder-remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823F238C5FA3006D9AFC /* JSONDecoder-remote.swift */; };
+		446A8242238C634A006D9AFC /* FriendDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A8241238C634A006D9AFC /* FriendDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		446A823B238C40EA006D9AFC /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		446A823D238C42B6006D9AFC /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		446A823F238C5FA3006D9AFC /* JSONDecoder-remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder-remote.swift"; sourceTree = "<group>"; };
+		446A8241238C634A006D9AFC /* FriendDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				446A8239238C4040006D9AFC /* friendface.json */,
 				446A8226238C3EB2006D9AFC /* ViewController.swift */,
 				446A823F238C5FA3006D9AFC /* JSONDecoder-remote.swift */,
+				446A8241238C634A006D9AFC /* FriendDataSource.swift */,
 				446A823B238C40EA006D9AFC /* Friend.swift */,
 				446A823D238C42B6006D9AFC /* Connection.swift */,
 				446A8228238C3EB2006D9AFC /* Main.storyboard */,
@@ -158,6 +161,7 @@
 				446A823E238C42B6006D9AFC /* Connection.swift in Sources */,
 				446A8227238C3EB2006D9AFC /* ViewController.swift in Sources */,
 				446A823C238C40EA006D9AFC /* Friend.swift in Sources */,
+				446A8242238C634A006D9AFC /* FriendDataSource.swift in Sources */,
 				446A8223238C3EB2006D9AFC /* AppDelegate.swift in Sources */,
 				446A8225238C3EB2006D9AFC /* SceneDelegate.swift in Sources */,
 				446A8240238C5FA3006D9AFC /* JSONDecoder-remote.swift in Sources */,
