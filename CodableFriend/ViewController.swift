@@ -54,15 +54,7 @@ class ViewController: UITableViewController, UISearchResultsUpdating {
         return cell
     }
     func updateSearchResults(for searchController: UISearchController) {
-        if let text = searchController.searchBar.text, text.count > 0 {
-            filteredFriends = friends.filter{
-                $0.name.contains(text)
-                    || $0.company.contains(text)
-                || $0.address.contains(text)
-            }
-        } else {
-            filteredFriends = friends
-        }
+        filteredFriends = friends.matching(searchController.searchBar.text)
         tableView.reloadData()
     }
 }
