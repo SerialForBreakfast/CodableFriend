@@ -19,7 +19,22 @@
 		446A823E238C42B6006D9AFC /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823D238C42B6006D9AFC /* Connection.swift */; };
 		446A8240238C5FA3006D9AFC /* JSONDecoder-remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823F238C5FA3006D9AFC /* JSONDecoder-remote.swift */; };
 		446A8242238C634A006D9AFC /* FriendDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A8241238C634A006D9AFC /* FriendDataSource.swift */; };
+		44E4F54C238C77F000AB93AC /* CodableFriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4F54B238C77F000AB93AC /* CodableFriendTests.swift */; };
+		44E4F553238C780700AB93AC /* FriendDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A8241238C634A006D9AFC /* FriendDataSource.swift */; };
+		44E4F554238C7AD800AB93AC /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823B238C40EA006D9AFC /* Friend.swift */; };
+		44E4F555238C7ADB00AB93AC /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823D238C42B6006D9AFC /* Connection.swift */; };
+		44E4F556238C7ADE00AB93AC /* JSONDecoder-remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A823F238C5FA3006D9AFC /* JSONDecoder-remote.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44E4F54E238C77F000AB93AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 446A8217238C3EB2006D9AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 446A821E238C3EB2006D9AFC;
+			remoteInfo = CodableFriend;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		446A821F238C3EB2006D9AFC /* CodableFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodableFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +51,20 @@
 		446A823D238C42B6006D9AFC /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		446A823F238C5FA3006D9AFC /* JSONDecoder-remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder-remote.swift"; sourceTree = "<group>"; };
 		446A8241238C634A006D9AFC /* FriendDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataSource.swift; sourceTree = "<group>"; };
+		44E4F549238C77F000AB93AC /* CodableFriendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableFriendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E4F54B238C77F000AB93AC /* CodableFriendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFriendTests.swift; sourceTree = "<group>"; };
+		44E4F54D238C77F000AB93AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		446A821C238C3EB2006D9AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44E4F546238C77F000AB93AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				446A8221238C3EB2006D9AFC /* CodableFriend */,
+				44E4F54A238C77F000AB93AC /* CodableFriendTests */,
 				446A8220238C3EB2006D9AFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				446A821F238C3EB2006D9AFC /* CodableFriend.app */,
+				44E4F549238C77F000AB93AC /* CodableFriendTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +112,15 @@
 			path = CodableFriend;
 			sourceTree = "<group>";
 		};
+		44E4F54A238C77F000AB93AC /* CodableFriendTests */ = {
+			isa = PBXGroup;
+			children = (
+				44E4F54B238C77F000AB93AC /* CodableFriendTests.swift */,
+				44E4F54D238C77F000AB93AC /* Info.plist */,
+			);
+			path = CodableFriendTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,6 +141,24 @@
 			productReference = 446A821F238C3EB2006D9AFC /* CodableFriend.app */;
 			productType = "com.apple.product-type.application";
 		};
+		44E4F548238C77F000AB93AC /* CodableFriendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44E4F550238C77F000AB93AC /* Build configuration list for PBXNativeTarget "CodableFriendTests" */;
+			buildPhases = (
+				44E4F545238C77F000AB93AC /* Sources */,
+				44E4F546238C77F000AB93AC /* Frameworks */,
+				44E4F547238C77F000AB93AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44E4F54F238C77F000AB93AC /* PBXTargetDependency */,
+			);
+			name = CodableFriendTests;
+			productName = CodableFriendTests;
+			productReference = 44E4F549238C77F000AB93AC /* CodableFriendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +171,10 @@
 				TargetAttributes = {
 					446A821E238C3EB2006D9AFC = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					44E4F548238C77F000AB93AC = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 446A821E238C3EB2006D9AFC;
 					};
 				};
 			};
@@ -134,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				446A821E238C3EB2006D9AFC /* CodableFriend */,
+				44E4F548238C77F000AB93AC /* CodableFriendTests */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +206,13 @@
 				446A822F238C3EBA006D9AFC /* Assets.xcassets in Resources */,
 				446A823A238C4040006D9AFC /* friendface.json in Resources */,
 				446A822A238C3EB2006D9AFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44E4F547238C77F000AB93AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +234,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44E4F545238C77F000AB93AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E4F554238C7AD800AB93AC /* Friend.swift in Sources */,
+				44E4F553238C780700AB93AC /* FriendDataSource.swift in Sources */,
+				44E4F556238C7ADE00AB93AC /* JSONDecoder-remote.swift in Sources */,
+				44E4F54C238C77F000AB93AC /* CodableFriendTests.swift in Sources */,
+				44E4F555238C7ADB00AB93AC /* Connection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44E4F54F238C77F000AB93AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 446A821E238C3EB2006D9AFC /* CodableFriend */;
+			targetProxy = 44E4F54E238C77F000AB93AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		446A8228238C3EB2006D9AFC /* Main.storyboard */ = {
@@ -340,6 +426,46 @@
 			};
 			name = Release;
 		};
+		44E4F551238C77F000AB93AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C52PFKSQPU;
+				INFOPLIST_FILE = CodableFriendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShowBlender.CodableFriendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodableFriend.app/CodableFriend";
+			};
+			name = Debug;
+		};
+		44E4F552238C77F000AB93AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C52PFKSQPU;
+				INFOPLIST_FILE = CodableFriendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShowBlender.CodableFriendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodableFriend.app/CodableFriend";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,6 +483,15 @@
 			buildConfigurations = (
 				446A8237238C3EBA006D9AFC /* Debug */,
 				446A8238238C3EBA006D9AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44E4F550238C77F000AB93AC /* Build configuration list for PBXNativeTarget "CodableFriendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E4F551238C77F000AB93AC /* Debug */,
+				44E4F552238C77F000AB93AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
